@@ -6,14 +6,12 @@ ADMINS = [8069493255]
 
 # /start 명령어 핸들러 함수
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text("
-안녕하세요, 오리엔 인베스트 입니다. 원활하고 빠른 상담을 진행을 위해 아래 항목 기재 부탁드립니다. 
-
-항목1 기존회원/신규회원 
-항목2 이름 
-항목3 연락처
-항목3 생년월일 
-항목4 문의내용")
+    await update.message.reply_text("안녕하세요, 오리엔 인베스트입니다. 원활하고 빠른 상담을진행하기 위해 아래 항목 기재 부탁드립니다.
+1. 기존회원/신규회원 
+2. 이름
+3. 연락처
+4. 생년월일
+5. 문의내용 ")
 
 # 사용자가 보낸 메시지를 관리자들에게 전달하고, 사용자에게 접수 완료 메시지 보내기
 async def forward_to_admins(update: Update, context: ContextTypes.DEFAULT_TYPE):
