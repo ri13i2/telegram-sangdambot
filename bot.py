@@ -43,7 +43,7 @@ async def forward_to_admins(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # ✅ 메인 실행부
 if __name__ == '__main__':
-    TOKEN = "8135523315:AAF4UQ9NuSKIkhWj7Hb7nXKv0QGyqWpiWQg"  # ← 자신의 봇 토큰으로 바꾸세요
+    TOKEN = "8135523315:AAHUv6TX6-KNxzMJERk8IyJ4P50YFQxaI9Y"  # ← 자신의 봇 토큰으로 바꾸세요
 
     app = ApplicationBuilder().token(TOKEN).build()
 
